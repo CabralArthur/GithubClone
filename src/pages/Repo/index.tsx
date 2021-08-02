@@ -35,7 +35,7 @@ const Repo: React.FC = () => {
   if (data?.error) {
     return <h1>{data.error}</h1>
   }
-
+  
   return (
     <Container>
       {data?.repos?.map((item) => (
@@ -43,13 +43,13 @@ const Repo: React.FC = () => {
           <Breadcrumb>
             <RepoIcon />
 
-            <Link className={'username'} to={username}>
+            <Link className={'username'} to={'/' + username}>
               {username}
             </Link>
 
             <span>/</span>
 
-            <Link className={'reponame'} to={username + '/' + reponame}>
+            <Link className={'reponame'} to={'/' + username + '/' + reponame}>
               {reponame}
             </Link>
           </Breadcrumb>
@@ -64,7 +64,7 @@ const Repo: React.FC = () => {
             </li>
             <li>
               <ForkIcon />
-              <b>{item.fork}</b>
+              <b>{item.forks_count}</b>
               <span>forks</span>
             </li>
           </Stats>

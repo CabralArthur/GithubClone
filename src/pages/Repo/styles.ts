@@ -80,7 +80,7 @@ export const Stats = styled.ul`
   > li {
     display: flex;
     align-items: center;
-    margin-right: 9px;
+    gap: .5rem;
   }
 
   > * {

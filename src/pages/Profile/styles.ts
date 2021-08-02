@@ -64,6 +64,9 @@ export const CalendarHeading = styled.span`
   font-size: 16px;
   margin: 36px 0px;
   display: inline-flex;
+  @media(max-width: 1280px){
+    display: none;
+  }
 `;
 
 export const RepoIcon = styled(RiBookMarkLine)`

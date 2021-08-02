@@ -8,6 +8,7 @@ import RepoCard from '../../components/RepoCard';
 import RandomCalendar from '../../components/RandomCalendar';
 
 import { APIUser, APIRepo } from '../../@types';
+import Loader from '../../components/Loader';
 
 interface Data {
   user?: APIUser;
@@ -18,6 +19,13 @@ interface Data {
 const Profile: React.FC = () => {
   const { username = 'CabralArthur' } = useParams();
   const [ data, setData ] = useState<Data>();
+
+  const [loading, setLoading] = useState(true);
+  useEffect(() =>{
+    setTimeout(() =>{
+      setLoading(false)
+    }, 2000)
+  }, [])
 
   useEffect(() => {
     Promise.all([
@@ -49,7 +57,7 @@ const Profile: React.FC = () => {
   }
 
   if (!data?.user || !data?.repos) {
-    return <h1>Loading...</h1>
+    return loading ? <Loader/> : <h1>Loaded</h1>
   }
 
   const TabContent = () => (
@@ -59,7 +67,6 @@ const Profile: React.FC = () => {
       <span className="number">{data.user?.public_repos}</span>
     </div>
   )
-
   return (
     <Container>
       <Tab className="desktop">
@@ -104,7 +111,7 @@ const Profile: React.FC = () => {
                   description={item.description}
                   language={item.language}
                   stars={item.stargazers_count}
-                  forks={item.fork}
+                  forks={item.forks_count}
                 />
               ))}
             </div>
