@@ -72,5 +72,5 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 
 
-[![Linkedin Badge](https://img.shields.io/badge/-Arthur Cabral-blue?style=flat-square&logo=Linkedin&logoColor=white&https:/)](https://www.linkedin.com/in/cabralarthur/)
+[![Linkedin Badge](https://img.shields.io/badge/-Arthur Cabral-blue?style=flat-square&logo=Linkedin&logoColor=white&https:/)](https://www.linkedin.com/in/cabralarthur/)]
 [![Gmail Badge](https://img.shields.io/badge/-arthurcabral.dev@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:arthurcabral.dev@gmail.com)](mailto:arthurcabral.dev@gmail.com)
