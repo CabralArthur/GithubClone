@@ -61,12 +61,3 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [GitHubAPI](https://docs.github.com/en/rest)
 - [TypeScript](https://www.typescriptlang.org/)
 
-### 🎨 Autor
----
-<div style="display: flex">
-  <a href="https://github.com/CabralArthur">
-    <img style="border-radius: 50%; width: 100px; height: 100px;" src="https://avatars.githubusercontent.com/u/63428806?v=4" width="100px;" alt="Arthur Cabral"/>
-    <b> Feito Por Arthur Cabral 🚀</b>
-  </a>
-</div>
-
