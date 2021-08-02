@@ -5,12 +5,12 @@ export default createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
   }
 
   html {
     min-height: 100%;
     background: var(--primary);
+    overflow-x: hidden;
   }
 
   *, button, input {
