@@ -75,7 +75,7 @@ const Repo: React.FC = () => {
                 <span>View on Github</span>
               </LinkButton>
 
-              <LinkButton href={'/' + username}>
+              <LinkButton href={'/'}>
                 <BackIcon />
                 <span>Back to initial page</span>
               </LinkButton>
